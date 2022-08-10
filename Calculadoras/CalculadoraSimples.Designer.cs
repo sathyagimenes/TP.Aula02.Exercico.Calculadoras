@@ -49,7 +49,6 @@
             // 
             // lblTela
             // 
-            this.lblTela.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTela.BackColor = System.Drawing.Color.DimGray;
             this.lblTela.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTela.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -58,7 +57,7 @@
             this.lblTela.Name = "lblTela";
             this.lblTela.Size = new System.Drawing.Size(451, 86);
             this.lblTela.TabIndex = 0;
-            this.lblTela.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn0
             // 
@@ -288,7 +287,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 478);
+            this.ClientSize = new System.Drawing.Size(605, 483);
             this.Controls.Add(this.lblTela);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnMais);
