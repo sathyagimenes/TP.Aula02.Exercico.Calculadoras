@@ -23,9 +23,4 @@ var result = Calc.Compute("2+2", "");
 ## :hammer: Como executar o programa
 Clonar o repositório em uma pasta local: `git clone https://github.com/sathyagimenes/TP.Aula02.Exercico.Calculadoras.git` <br/>
 Abra a solução do projeto com o visual studio: arquivo `Calculadoras.sln` <br/>
-No documento `Program.cs` descomente a linha da Calculadora que você deseja executar e comente a linha da Calculadora que não deseja usar. Exemplo: <br/>
-```C#
-            //Application.Run(new CalculadoraIMC());
-            Application.Run(new CalculadoraSimples());
-```
 Execute o projeto com `CTRL + F5`
