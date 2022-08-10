@@ -52,12 +52,11 @@
             this.lblTela.BackColor = System.Drawing.Color.DimGray;
             this.lblTela.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTela.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTela.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblTela.Location = new System.Drawing.Point(85, 54);
             this.lblTela.Name = "lblTela";
             this.lblTela.Size = new System.Drawing.Size(451, 86);
             this.lblTela.TabIndex = 0;
-            this.lblTela.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTela.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btn0
             // 
