@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.lblSelecione = new System.Windows.Forms.Label();
             this.btnSimples = new System.Windows.Forms.Button();
             this.btnIMC = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.sbtSelecione = new System.Windows.Forms.ToolStripSplitButton();
+            this.calculadoraSimplesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,22 +82,45 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator1,
-            this.toolStripComboBox1});
+            this.sbtSelecione});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(550, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(550, 26);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 26);
             // 
-            // toolStripComboBox1
+            // sbtSelecione
             // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            this.sbtSelecione.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.sbtSelecione.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculadoraSimplesToolStripMenuItem,
+            this.calculadoraIMCToolStripMenuItem});
+            this.sbtSelecione.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sbtSelecione.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.sbtSelecione.Image = ((System.Drawing.Image)(resources.GetObject("sbtSelecione.Image")));
+            this.sbtSelecione.ImageTransparentColor = System.Drawing.Color.Gray;
+            this.sbtSelecione.Name = "sbtSelecione";
+            this.sbtSelecione.Size = new System.Drawing.Size(209, 23);
+            this.sbtSelecione.Text = "Selecione a Calculadora";
+            // 
+            // calculadoraSimplesToolStripMenuItem
+            // 
+            this.calculadoraSimplesToolStripMenuItem.Name = "calculadoraSimplesToolStripMenuItem";
+            this.calculadoraSimplesToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.calculadoraSimplesToolStripMenuItem.Text = "Calculadora Simples";
+            this.calculadoraSimplesToolStripMenuItem.Click += new System.EventHandler(this.calculadoraSimplesToolStripMenuItem_Click);
+            // 
+            // calculadoraIMCToolStripMenuItem
+            // 
+            this.calculadoraIMCToolStripMenuItem.Name = "calculadoraIMCToolStripMenuItem";
+            this.calculadoraIMCToolStripMenuItem.Size = new System.Drawing.Size(235, 24);
+            this.calculadoraIMCToolStripMenuItem.Text = "Calculadora IMC";
+            this.calculadoraIMCToolStripMenuItem.Click += new System.EventHandler(this.calculadoraIMCToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -122,6 +148,8 @@
         private Button btnIMC;
         private ToolStrip toolStrip1;
         private ToolStripSeparator toolStripSeparator1;
-        private ToolStripComboBox toolStripComboBox1;
+        private ToolStripSplitButton sbtSelecione;
+        private ToolStripMenuItem calculadoraSimplesToolStripMenuItem;
+        private ToolStripMenuItem calculadoraIMCToolStripMenuItem;
     }
 }

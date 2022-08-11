@@ -29,5 +29,17 @@ namespace Calculadoras
             telaIMC.ShowDialog();
         }
 
+        private void calculadoraSimplesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculadoraSimples telaSimples = new CalculadoraSimples();
+            telaSimples.ShowDialog();
+        }
+
+        private void calculadoraIMCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculadoraIMC telaIMC = new CalculadoraIMC();
+            telaIMC.ShowDialog();
+        }
+
     }
 }
